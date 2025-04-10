@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tweet-extractor-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn flask_app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: TWEET_EXTRACTOR_URL
+        sync: false
+        # Aquí tendrás que configurar la URL de tu servicio Railway en el panel de control de Render
