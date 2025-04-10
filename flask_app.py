@@ -13,7 +13,7 @@ import time
 app = Flask(__name__)
 
 # Get backend URL from environment variable
-TWEET_EXTRACTOR_URL = os.environ.get('web-production-68f10.up.railway.app')
+TWEET_EXTRACTOR_URL = os.environ.get('TWEET_EXTRACTOR_URL')
 
 if not TWEET_EXTRACTOR_URL:
     raise EnvironmentError("TWEET_EXTRACTOR_URL environment variable is not set")
