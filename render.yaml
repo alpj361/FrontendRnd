@@ -8,5 +8,5 @@ services:
       - key: PYTHON_VERSION
         value: 3.9.0
       - key: https://web-production-68f10.up.railway.app/
-        sync: false
+        sync: true
         # Aquí tendrás que configurar la URL de tu servicio Railway en el panel de control de Render
