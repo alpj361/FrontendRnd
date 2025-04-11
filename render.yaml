@@ -11,3 +11,7 @@ services:
         value: https://web-production-68f10.up.railway.app/
         sync: true
         # Aquí tendrás que configurar la URL de tu servicio Railway en el panel de control de Render
+      - key: EXTRACTORT_URL
+        value: https://extractort-production.up.railway.app/
+        sync: true
+        # URL del segundo microservicio ExtractorT en Railway
